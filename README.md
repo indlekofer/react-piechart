@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40indlekofer%2Freact-piechart.svg)](https://badge.fury.io/js/%40indlekofer%2Freact-piechart)
 
-https://di3.github.io/react-piechart/demo/
+https://indlekofer.github.io/react-piechart/demo/
 
 ## Props
   **values**: *array*  
