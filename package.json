@@ -1,0 +1,47 @@
+{
+  "name": "@indlekofer/react-piechart",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Daniel Indlekofer <daniel@indlekofer.org>",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indlekofer/react-piechart.git"
+  },
+  "main": "./cjs/index.js",
+  "scripts": {
+    "build:demo": "browserify ./docs/src/demo/index.jsx -o ./docs/demo/index.js -t babelify",
+    "build:commonjs": "babel src --out-dir cjs",
+    "build": "npm run build:commonjs",
+    "test": "mocha --require @babel/register",
+    "test:cover": "nyc --extension .jsx --reporter=text mocha --require @babel/register",
+    "lint": "eslint --ext .js --ext .jsx ./src/",
+    "lint:fix": "eslint ./src/ --fix --ext .js --ext .jsx",
+    "lint:demo": "eslint --ext .js --ext .jsx ./docs/src/demo/",
+    "lint:demo:fix": "eslint ./docs/src/demo/ --fix --ext .js --ext .jsx"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "prop-types": "^15.7.2"
+  },
+  "files": [
+    "cjs/"
+  ],
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
