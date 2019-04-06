@@ -68,6 +68,6 @@ Piechart.propTypes = {
 
 Piechart.defaultProps = {
   size: 250
-}
+};
 
 export default Piechart;
